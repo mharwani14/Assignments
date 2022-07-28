@@ -4,7 +4,7 @@ class NetworkHelper{
   NetworkHelper(this.url);
   final String url;
   Future getData() async{
-    http.Response response= await http.get(Uri.parse("url"));
+    http.Response response=await http.get(Uri.parse(url));
    int code=response.statusCode;
    
    if(code==200){
